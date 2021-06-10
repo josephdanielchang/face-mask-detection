@@ -11,11 +11,14 @@ In the midst of the COVID-19 pandemic, the CDC recommends everyone face masks wh
 
 ### How to Run
 1. Download Face Mask Dataset from Kaggle:
+
 https://www.kaggle.com/andrewmvd/face-mask-detection
 Place the extracted dataset project's home directory as follows:
 ./input/Face_Mask_Dataset/annotations
 ./input/Face_Mask_Dataset/images
+
 2. Download Face Mask 12K Dataset from Kaggle:
+
 https://www.kaggle.com/ashishjangra27/face-mask-12k-images-dataset
 Place the extracted dataset project's home directory as follows:
 ./input/Face_Mask_Dataset_12K/Test
