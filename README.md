@@ -5,29 +5,30 @@ In the midst of the COVID-19 pandemic, the CDC recommends everyone face masks wh
 ### Python Notebooks
 * **pytorch-fasterrcnn-train.ipynb**: train face detector model
 * **pytorch-fasterrcnn-test.ipynb**: load face detector model and run on test images
-* **FaceMaskDetection_Custom_and_Resnet.ipynb**: train and test Resnet 18, 34, and custom CNN model for face mask classification
-* **FaceMaskDetection_DenseNet.ipynb**: train and test Densenet 121, 161, 201 models for face mask classification
-* **FaceMaskDetection_VGG.ipynb**: train and test VGG-16, VGG-19 models for face mask classification
+* **FaceMaskClassification_Custom_and_Resnet.ipynb**: train and test Resnet 18, 34, and custom CNN model for face mask classification
+* **FaceMaskClassification_DenseNet.ipynb**: train and test Densenet 121, 161, 201 models for face mask classification
+* **FaceMaskClassification_VGG.ipynb**: train and test VGG-16, VGG-19 models for face mask classification
 
 ### How to Run
-1. Download Face Mask Dataset from Kaggle:
-https://www.kaggle.com/andrewmvd/face-mask-detection
+1. Download Face Mask Dataset from Kaggle: https://www.kaggle.com/andrewmvd/face-mask-detection
+
 Place the extracted dataset project's home directory as follows:
 ./input/Face_Mask_Dataset/annotations
 ./input/Face_Mask_Dataset/images
 
-2. Download Face Mask 12K Dataset from Kaggle:
-https://www.kaggle.com/ashishjangra27/face-mask-12k-images-dataset
+2. Download Face Mask 12K Dataset from Kaggle: https://www.kaggle.com/ashishjangra27/face-mask-12k-images-dataset
+
 Place the extracted dataset project's home directory as follows:
 ./input/Face_Mask_Dataset_12K/Test
 ./input/Face_Mask_Dataset_12K/Train
 ./input/Face_Mask_Dataset_12K/Validation
 
 3. Run pytorch-fasterrcnn-train.ipynb to train face detector model
-Model will be saved to:
+Model will be used to detect faces before training classifcation models and are saved to:
 ./saved_models/rcnn_model.pt
 * Optional: Run pytorch-fasterrcnn-test.ipynb to load face detector model and test on images
-4. Run FaceMaskDetection_VGG.ipynb to train VGG models and visualize loss
-5. Run FaceMaskDetection_DenseNet.ipynb to train DenseNet models and visualize loss
-6. Run FaceMaskDetection_Custom_and_Resnet.ipynb to train Resnet/Custom CNN models and visualize loss
+
+4. Run FaceMaskClassification_VGG.ipynb to train VGG models and visualize loss
+5. Run FaceMaskClassification_DenseNet.ipynb to train DenseNet models and visualize loss
+6. Run FaceMaskClassification_Custom_and_Resnet.ipynb to train Resnet/Custom CNN models and visualize loss
 * All models will be saved to ./saved_models as .pt
