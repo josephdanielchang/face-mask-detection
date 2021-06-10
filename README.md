@@ -17,28 +17,28 @@ TensorFlow 2.5.0
 ### How to Run
 * Download Face Mask Dataset from Kaggle: https://www.kaggle.com/andrewmvd/face-mask-detection
 
-  * Place the extracted dataset project's home directory as follows:
+    Place the extracted dataset project's home directory as follows:
     ```
     ./input/Face_Mask_Dataset/annotations
     ./input/Face_Mask_Dataset/images
     ```
 * Download Face Mask 12K Dataset from Kaggle: https://www.kaggle.com/ashishjangra27/face-mask-12k-images-dataset
 
-  * Place the extracted dataset project's home directory as follows:
+    Place the extracted dataset project's home directory as follows:
     ```
     ./input/Face_Mask_Dataset_12K/Test
     ./input/Face_Mask_Dataset_12K/Train
     ./input/Face_Mask_Dataset_12K/Validation
     ```
 * Run pytorch-fasterrcnn-train.ipynb to train face detector model
-  * Model will be used to detect faces before training classifcation models and are saved to:
+    Model will be used to detect faces before training classifcation models and are saved to:
     ```
     ./saved_models/rcnn_model.pt
     ```
-  * Optional: Run pytorch-fasterrcnn-test.ipynb to load face detector model and test on images
+    Optional: Run pytorch-fasterrcnn-test.ipynb to load face detector model and test on images
 
 * Run FaceMaskClassification_VGG.ipynb to train VGG models and visualize loss
-
-* Run FaceMaskClassification_DenseNet.ipynb to train DenseNet models and visualize loss
-
-* Run FaceMaskClassification_Custom_and_Resnet.ipynb to train Resnet/Custom CNN models and visualize loss. All models will be saved to ./saved_models as .pt
+  
+  Run FaceMaskClassification_DenseNet.ipynb to train DenseNet models and visualize loss
+  
+  Run FaceMaskClassification_Custom_and_Resnet.ipynb to train Resnet/Custom CNN models and visualize loss. All models will be saved to ./saved_models as .pt
