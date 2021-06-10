@@ -41,4 +41,6 @@ TensorFlow 2.5.0
   
   Run FaceMaskClassification_DenseNet.ipynb to train DenseNet models and visualize loss
   
-  Run FaceMaskClassification_Custom_and_Resnet.ipynb to train Resnet/Custom CNN models and visualize loss. All models will be saved to ./saved_models as .pt
+  Run FaceMaskClassification_Custom_and_Resnet.ipynb to train Resnet/Custom CNN models and visualize loss. 
+  
+  All models will be saved to ./saved_models as .pt
